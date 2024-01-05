@@ -6,8 +6,8 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
-  url      = "file:dev.sqlite"
+  provider = "postgresql"
+  url      = "postgresql://postgres:39hn7$*%U#aTZY@db.ksvucmiwyusajlehrbit.supabase.co:5432/postgres"
 }
 
 model Session {
