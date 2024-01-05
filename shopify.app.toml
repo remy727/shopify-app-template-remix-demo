@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "Remix"
+client_id = "fa80578cc81c24e8f59b04ad53271073"
+application_url = "https://expedia-unlimited-writers-planets.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://expedia-unlimited-writers-planets.trycloudflare.com/auth/callback",
+  "https://expedia-unlimited-writers-planets.trycloudflare.com/auth/shopify/callback",
+  "https://expedia-unlimited-writers-planets.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "peace-collective-apps-review.myshopify.com"
